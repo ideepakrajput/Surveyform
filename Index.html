@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Survey Form</title>
+    <style type="text/css" media="all">
+    body{
+      background-color: #CCD295;
+      font-size: 10px;
+      text-justify: auto;
+      clear: all;
+    }
+    #form{
+      background-color: whitesmoke;
+      padding: 15px;
+      text-align: center;
+      margin: 20px 30px;
+      border-radius: 10px;
+    }
+    #note{
+      text-align: left;
+      font-size: 13px;
+    }
+    .fieldset{
+      text-align: left;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    input{
+      margin-bottom:20px;
+      border-radius: 5px;
+    }
+    #Phone{
+      width: 65%;
+    }
+    #IQ{
+      margin-top: 30px;
+      width: 85%;
+    }
+   input[type="checkbox"]{
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+    #submit{
+      background-color: red;
+      color: white;
+      margin-left: 25%;
+      margin-top: 30px;
+    }
+    textarea{
+      margin-bottom: 15px;
+      margin-top: 10px;
+    }
+    #education{
+      margin-top: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="form">
+      <h1>Application For Permission To Date My Daughter</h1>
+      <p id="note"><strong>Note:</strong> Form is to be completed at least 21 days prior to date</p>
+     
+      <fieldset class="fieldset">
+        <legend><strong>Personal Details</strong></legend>
+        <br />
+        <label for="Name">Name:</label>
+        <input placeholder="Enter name here" type="text" name="Name" id="Name" value="" />
+        <br />
+        <label for="Address">Address:</label>
+        <input placeholder="Enter name here" type="text" name="Address" id="Address" value="" />
+        <br />
+        <label for="Email">Email:</label>
+        <input placeholder="Enter email here" type="email" name="Email" id="Email" value="" />
+        <br />
+        <label for="Phone">Phone Number:</label>
+        <input placeholder="Enter 10 digit number" type="number" name="Phone" id="Phone" value="" />
+        <br />
+        <label for="IQ">IQ:</label>
+        <input placeholder="Enter IQ here" type="text" name="IQ" id="IQ" value="" />
+        <br />
+        <label for="Gender">Gender:</label>
+        <p>
+        <input class="gender" type="radio" name="Gender" id="Gender" value="" />Male <br />
+        <input class="gender" type="radio" name="Gender" id="Gender" value="" />Female <br />
+        <input class="gender" type="radio" name="Gender" id="Gender" value="" />Other <br />
+        </p>
+        <label for="Dateproposed">Date of Proposed Outing:</label>
+        <input type="date" name="" id="Dateproposed" value="" />
+        </fieldset>
+        <fieldset class="fieldset">
+          <label for="Apply">Check All That Apply</label><br />
+          <input type="checkbox" name="Apply" id="Apply" value="" /> I have tattoos and/or piercings <br />
+          <input type="checkbox" name="Apply" id="Apply" value="" />I am more than 2 years older than my daughter <br />
+          <input type="checkbox" name="Apply" id="Apply" value="" />I own a panel van or V8 ute <br />
+          <input type="checkbox" name="Apply" id="Apply" value="" />I work full-time <br />
+          <input type="checkbox" name="Apply" id="Apply" value="" />My parents are rich <br />
+          <input type="checkbox" name="Apply" id="Apply" value="" />Is the date at a well lit public location <br />
+        </fieldset>
+        
+        <fieldset class="fieldset">
+          <div>
+          <label for="Wing">Political Persuasion:</label>
+          <select name="Wing" id="Wing">
+            <option value="">Left Wing</option>
+            <option value="">Right Wing</option>
+            <option value="">Conservative</option>
+            <option value="">Nazi</option>
+          </select>
+          </div>
+          
+          <div id="education">
+          <label for="education">Education Level Completed:</label>
+          <select name="education" id="education">
+            <option value="">University</option>
+            <option value="">College</option>
+            <option value="">High School</option>
+            <option value="">None</option>
+          </select>
+          </div>
+        </fieldset>
+        
+        <fieldset class="fieldset">
+          <legend><strong>Essay Section</strong></legend>
+          <div>
+            <label for="">In 50 words or more explain why you want to date my daughter</label>
+            <div>
+            <textarea placeholder="Enter text here" name="" id= rows="30" cols="20"></textarea>
+            </div>
+            <label for="">Please upload contact details for 2 references</label>
+           <div>
+            <textarea placeholder="Enter text here" name="" id= rows="30" cols="20"></textarea>
+            </div>
+          </div>
+          
+          <div>
+            <label for="file">Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:</label>
+            <div>
+              <input type="file" name="" id="file" value="" />
+            </div>
+          </div>
+          <div>
+          <input type="submit" name="" id="submit" value="Send Your Application" />
+          </div>
+        </fieldset>
+    </div>
+</body>
+
+</html>
